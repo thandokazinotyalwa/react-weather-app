@@ -14,7 +14,7 @@ export default function Weather() {
             description: response.data.weather[0].description,
             iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
             city: response.data.name,
-            wind: response.data.main.wind.temp
+            wind: response.data.main.wind
             
         });
         
@@ -71,7 +71,7 @@ export default function Weather() {
     } else {
         const apiKey = "57821c3b75b60c68ecd1a8d0dd1aa8d3";
         let city = "Cape Town";
-        let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
         axios.get(apiUrl).then(handleResponse);
 
         return "Loading..."
