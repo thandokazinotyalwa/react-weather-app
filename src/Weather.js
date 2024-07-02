@@ -1,19 +1,19 @@
-import React, {useState} from "react"
-import axios from "axios"
+import React, {useState} from "react";
+import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ready: false});
     function handleResponse(response) {
         console.log(response.data);
         setWeatherData({
             ready: true,
             temperature: response.data.main.temp,
-            humidity: response.data.main.humidity,
+            humidity: Math.round(response.data.main.humidity),
             date: "Wednesday 07:00",
             description: response.data.weather[0].description,
             iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-            wind: response.data.main.wind.speed,
+            wind: Math.round(response.data.wind.speed),
             city: response.data.name
             
         });
@@ -69,9 +69,9 @@ export default function Weather() {
         );
      
     } else {
-        const apiKey = "57821c3b75b60c68ecd1a8d0dd1aa8d3";
-        let city = "Cape Town";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+        const apiKey = "8c78e9e7e9928cd1a2a6f923072c3dec"; //57821c3b75b60c68ecd1a8d0dd1aa8d3;
+        //let city = "props.defaultCity";
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
         axios.get(apiUrl).then(handleResponse);
 
         return "Loading..."
