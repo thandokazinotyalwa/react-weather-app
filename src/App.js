@@ -6,7 +6,7 @@ import './App.css';
 export default function App() {
   return (
   <div className="App">
-    <div class="container">
+    <div className="container">
       <Weather defaultCity = "Cape Town"/>
       <footer>This project was coded by{" "}
       <a href="https://www.delac.io/" target="blank">Thandokazi Notyalwa</a>{" "}
