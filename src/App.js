@@ -7,7 +7,7 @@ export default function App() {
   return (
   <div className="App">
     <div className="container">
-      <Weather defaultCity = "Cape Town"/>
+      <Weather defaultCity="Cape Town"/>
       <footer>This project was coded by{" "}
       <a href="https://www.delac.io/" target="blank">Thandokazi Notyalwa</a>{" "}
       and is{" "}

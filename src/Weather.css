@@ -48,4 +48,6 @@
     line-height: 1;
     margin-left: 0px;
 }
-
+.float-left{
+    float: left !important;
+}
