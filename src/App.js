@@ -9,9 +9,9 @@ export default function App() {
     <div className="container">
       <Weather defaultCity="Cape Town"/>
       <footer>This project was coded by{" "}
-      <a href="https://www.delac.io/" target="blank">Thandokazi Notyalwa</a>{" "}
+      <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">Thandokazi Notyalwa</a>{" "}
       and is{" "}
-      <a href="https://www.delac.io/" target="blank">open-sourced on Github</a>
+      <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">open-sourced on Github</a>
       </footer>
     </div>
     </div>
