@@ -12,6 +12,8 @@ export default function App() {
       <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">Thandokazi Notyalwa</a>{" "}
       and is{" "}
       <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">open-sourced on Github</a>
+      and {" "}
+      <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">hosted on Netlify</a>
       </footer>
     </div>
     </div>
