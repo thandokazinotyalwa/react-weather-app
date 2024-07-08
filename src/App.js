@@ -13,7 +13,7 @@ export default function App() {
       and is{" "}
       <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">open-sourced on Github</a>
       and {" "}
-      <a href="https://github.com/thandokazinotyalwa?tab=repositories" target="blank">hosted on Netlify</a>
+      <a href="https://skyviewweather.netlify.app/" target="blank">hosted on Netlify</a>
       </footer>
     </div>
     </div>
